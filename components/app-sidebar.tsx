@@ -29,6 +29,7 @@ import {
 } from "@/components/ui/sidebar";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
+import { sora } from "@/fonts/config";
 
 const data = {
   user: {
@@ -151,14 +152,21 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" asChild>
+            <SidebarMenuButton
+              size="lg"
+              asChild
+              className="hover:bg-transparent"
+            >
               <Link href="/">
-                <div className="bg-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
+                {/* <div className="bg-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
                   <Command className="size-4" />
-                </div>
-                <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium">E-Commerce</span>
-                  <span className="truncate text-xs">Axexa</span>
+                </div> */}
+                <div className="grid flex-1 text-left  text-sm leading-tight">
+                  <span
+                    className={`${sora.className} text-xl md:text-2xl font-bold tracking-tight`}
+                  >
+                    TRENDSWEAR<span className="text-primary">.</span>
+                  </span>
                 </div>
               </Link>
             </SidebarMenuButton>

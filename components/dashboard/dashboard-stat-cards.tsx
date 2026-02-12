@@ -31,7 +31,7 @@ const DashboardStatCards = () => {
                 <CardTitle className=" font-medium text-muted-foreground">
                   {item.title}
                 </CardTitle>
-                <div className="rounded-md bg-primary/10 p-2 text-primary">
+                <div className="rounded-xl bg-foreground border p-2 text-white">
                   <Icon className="h-5 w-5" />
                 </div>
               </CardHeader>
